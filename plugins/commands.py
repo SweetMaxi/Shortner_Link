@@ -24,7 +24,7 @@ async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [
             [
-                InlineKeyboardButton('Uᴘᴅᴀᴛᴇs', url='https://t.me/CinemaRoom')
+                InlineKeyboardButton('Uᴘᴅᴀᴛᴇs', url='https://t.me/HenTaii_Store')
             ],
             [
                 InlineKeyboardButton('Hᴇʟᴘ', url=f"https://t.me/{temp.U_NAME}?start=help"),
@@ -46,7 +46,7 @@ async def start(client, message):
             InlineKeyboardButton('× 𝐀𝐃𝐃 𝐌𝐄 𝐓𝐎 𝐘𝐎𝐔𝐑 𝐆𝐑𝐎𝐔𝐏 ×', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
             InlineKeyboardButton('Sᴇᴀʀᴄʜ', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('Uᴘᴅᴀᴛᴇs', url='https://t.me/CinemaRoom')
+            InlineKeyboardButton('Uᴘᴅᴀᴛᴇs', url='https://t.me/HenTaii_Store')
             ],[      
             InlineKeyboardButton('Hᴇʟᴘ', callback_data='help'),
             InlineKeyboardButton('Aʙᴏᴜᴛ', callback_data='about')
@@ -69,7 +69,7 @@ async def start(client, message):
             InlineKeyboardButton('× 𝐀𝐃𝐃 𝐌𝐄 𝐓𝐎 𝐘𝐎𝐔𝐑 𝐆𝐑𝐎𝐔𝐏 ×', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
             InlineKeyboardButton('Sᴇᴀʀᴄʜ', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('Uᴘᴅᴀᴛᴇs', url='https://t.me/CinemaRoom')
+            InlineKeyboardButton('Uᴘᴅᴀᴛᴇs', url='https://t.me/HenTaii_Store')
             ],[
             InlineKeyboardButton('Hᴇʟᴘ', callback_data='help'),
             InlineKeyboardButton('Aʙᴏᴜᴛ', callback_data='about')
@@ -125,7 +125,7 @@ async def start(client, message):
                     chat_id=message.from_user.id,
                     file_id=msg.get("file_id"),
                     caption=f_caption,
-                    reply_markup=InlineKeyboardMarkup( [ [InlineKeyboardButton("⚡ Jᴏɪɴ Oᴜʀ Gʀᴏᴜᴘ ⚡", url="https://t.me/CinemaChatRoom") ] ] ),
+                    reply_markup=InlineKeyboardMarkup( [ [InlineKeyboardButton("⚡ Jᴏɪɴ Oᴜʀ Gʀᴏᴜᴘ ⚡", url="https://t.me/+OoQ15-h3FjA3Mzc1") ] ] ),
                     protect_content=msg.get('protect', False),
                     )
             except FloodWait as e:
@@ -229,9 +229,9 @@ async def start(client, message):
         chat_id=message.from_user.id,
         file_id=file_id,
         caption=f_caption,
-        reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton("Jᴏɪɴ Gʀᴏᴜᴘ", url="https://t.me/CinemaChatRoom"),
-                                               InlineKeyboardButton("Sʜᴀʀᴇ", url="https://t.me/share/url?url=https://t.me/CinemaChatRoom") ],
-                                             [ InlineKeyboardButton("Sᴜᴘᴘᴏʀᴛ", url="https://t.me/CinemaRoom") ] ] ),
+        reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton("Jᴏɪɴ Gʀᴏᴜᴘ", url="https://t.me/+OoQ15-h3FjA3Mzc1"),
+                                               InlineKeyboardButton("Sʜᴀʀᴇ", url="https://t.me/share/url?url=https://t.me/HenTaii_Store") ],
+                                             [ InlineKeyboardButton("Sᴜᴘᴘᴏʀᴛ", url="https://t.me/HenTaii_Store") ] ] ),
         protect_content=True if pre == 'filep' else False,
         )
                     
