@@ -1,12 +1,12 @@
 class script(object):
-    START_TXT = """"<b>Hello</b> ʙᴇʟɪᴠᴇ ᴍᴇ, ɪ ᴄᴀɴ ᴀʙʟᴇ ᴛᴏ ғᴜʟʟғɪʟ ʏᴏᴜʀ ʟᴜsᴛ.
-<a href='https://t.me/HenTaii_Store'>ᴊᴏɪɴ ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ</a>"""
+    START_TXT = """"ʙᴇʟɪᴠᴇ ᴍᴇ, ɪ ᴄᴀɴ ᴀʙʟᴇ ᴛᴏ ғᴜʟʟғɪʟ ʏᴏᴜʀ ʟᴜsᴛ.
+ᴍᴀɪɴ : <a href='https://t.me/HenTaii_Store'>ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ</a>"""
     HELP_TXT = """<i>Here is my help menu"""
     ABOUT_TXT = """<b>★ Dᴇᴠᴇʟᴏᴘᴇʀ: <a href='https://t.me/l_Damon_l'>Dᴀᴍᴏɴ Sᴀʟᴠᴀᴛᴏʀᴇ</a>
 ★ Lɪʙʀᴀʀʏ: <a href='https://docs.pyrogram.org/'>Pʏʀᴏɢʀᴀᴍ</a>
 ★ Lᴀɴɢᴜᴀɢᴇ: <a href='https://www.python.org/download/releases/3.0/'>Pʏᴛʜᴏɴ 3</a>
 ★ Dᴀᴛᴀʙᴀsᴇ: <a href='https://www.mongodb.com/'>MᴏɴɢᴏDB</a>
-★ Bᴏᴛ Gʀᴏᴜᴘ: <a href='https://t.me/HenTaii_Store'>ᴊᴏɪɴ ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ</a></b>"""
+★ Bᴏᴛ Gʀᴏᴜᴘ: <a href='https://t.me/HenTaii_Store'>ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ</a></b>"""
     SOURCE_TXT = """<b>NOTE:</b>
 <b>Tʜɪs Bᴏᴛ Is Nᴏᴛ Aɴ Oᴘᴇɴ Sᴏᴜʀᴄᴇ Pʀᴏᴊᴇᴄᴛ, Cᴏɴᴛᴀᴄᴛ Tᴏ <a href='https://t.me/l_Damon_l'>Bᴏᴛ Oᴡɴᴇʀ</a>"""
     MANUELFILTER_TXT = """ʜᴇʟᴘ: <b>ꜰɪʟᴛᴇʀꜱ</b>
