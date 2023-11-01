@@ -44,13 +44,13 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 auth_channel = environ.get('AUTH_CHANNEL')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 # Set to False inside the bracket if you don't want to use Request Channel else set it to Channel ID
-REQ_CHANNEL = environ.get("REQ_CHANNEL", "-1001363490845")
+REQ_CHANNEL = environ.get("REQ_CHANNEL", "-1001762063851")
 REQ_CHANNEL = int(REQ_CHANNEL) if REQ_CHANNEL and id_pattern.search(REQ_CHANNEL) else False
 JOIN_REQS_DB = environ.get("JOIN_REQS_DB", DATABASE_URI)
 
 # Others
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'clicksfly.com')
-SHORTLINK_API = environ.get('SHORTLINK_API', 'c2150e28189cefefd05f8a9c5c5770cc462033e3')
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'cinemaroom.site')
+SHORTLINK_API = environ.get('SHORTLINK_API', '1dc8c0db119f83a84aaae82be7bd26e9f19a0329')
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001616955451'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', '+OoQ15-h3FjA3Mzc1')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
