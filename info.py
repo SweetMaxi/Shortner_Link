@@ -20,7 +20,7 @@ API_ID = int(environ.get('API_ID', '20628383'))
 
 API_HASH = environ.get('API_HASH', '65a242463b8af9ba7b3c41d8de9738d1')
 
-BOT_TOKEN = environ.get('BOT_TOKEN', '6127290632:AAENdfANC02P7qdIH74sQhwpM6DKWY5SAtM')
+BOT_TOKEN = environ.get('BOT_TOKEN', '5655829789:AAGO0JJxhlD8APIqtydphpcy-wEzOWPcmtU')
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -36,8 +36,8 @@ auth_grp = environ.get('AUTH_GROUP', '')
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://HentaiBot:HentaiBot@cluster0.6mjffpd.mongodb.net/HentaiBot?retryWrites=true&w=majority")
-DATABASE_NAME = environ.get('DATABASE_NAME', "HentaiBot")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Aikachan:Aikachan@hentai.nnnbavd.mongodb.net/Aikachan?retryWrites=true&w=majority")
+DATABASE_NAME = environ.get('DATABASE_NAME', "Aikachan")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # FSUB
@@ -53,7 +53,7 @@ SHORTLINK_URL = environ.get('SHORTLINK_URL', 'cinemaroom.site')
 SHORTLINK_API = environ.get('SHORTLINK_API', '1dc8c0db119f83a84aaae82be7bd26e9f19a0329')
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', False))
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001616955451'))
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', '+OoQ15-h3FjA3Mzc1')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', '+sXe90zYH9FdmZGFl')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "False")), False)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), True)
