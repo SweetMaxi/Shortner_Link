@@ -51,7 +51,7 @@ JOIN_REQS_DB = environ.get("JOIN_REQS_DB", DATABASE_URI)
 # Others
 SHORTLINK_URL = environ.get('SHORTLINK_URL', 'cinemaroom.site')
 SHORTLINK_API = environ.get('SHORTLINK_API', '1dc8c0db119f83a84aaae82be7bd26e9f19a0329')
-ENABLE_SHORTLINK= is_enabled((environ.get('ENABLE_SHORTLINK', "True")), True)
+IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', False))
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001616955451'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', '+OoQ15-h3FjA3Mzc1')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
