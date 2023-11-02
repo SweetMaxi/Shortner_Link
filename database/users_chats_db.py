@@ -114,7 +114,7 @@ class Database:
             'imdb': IMDB,
             'spell_check': SPELL_CHECK_REPLY,
             'welcome': MELCOW_NEW_USERS,
-            'template': IMDB_TEMPLATE
+            'template': IMDB_TEMPLATE,
             'shortlink': SHORTLINK_URL,
             'shortlink_api': SHORTLINK_API,
             'is_shortlink': IS_SHORTLINK
