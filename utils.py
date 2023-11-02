@@ -14,6 +14,7 @@ from typing import List
 from database.users_chats_db import db
 from bs4 import BeautifulSoup
 import requests
+import aiohttp
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
@@ -398,7 +399,7 @@ def humanbytes(size):
         n += 1
     return str(round(size, 2)) + " " + Dic_powerN[n] + 'B'
 
-async def get_shortlink(chat_id, link):
+def get_shortlink(chat_id, link):
     settings = await get_settings(chat_id) #fetching settings for group
     if 'shortlink' in settings.keys():
         URL = settings['shortlink']
@@ -428,6 +429,7 @@ async def get_shortlink(chat_id, link):
                     else:
                         logger.error(f"Error: {data['message']}")
                         return f'https://{URL}/shortLink?token={API}&format=json&link={link}'
+
         except Exception as e:
             logger.error(e)
             return f'https://{URL}/shortLink?token={API}&format=json&link={link}'
@@ -445,68 +447,7 @@ async def get_shortlink(chat_id, link):
                         return data["shortenedUrl"]
                     else:
                         logger.error(f"Error: {data['message']}")
-                        if URL == 'clicksfly.com':
-                            return f'https://{URL}/st?api={API}&url={link}'
-                        else:
-                            return f'https://{URL}/st?api={API}&url={link}'
+                        return f'https://{URL}/api?api={API}&link={link}'
         except Exception as e:
             logger.error(e)
-            if URL == 'clicksfly.com':
-                return f'https://{URL}/st?api={API}&url={link}'
-            else:
-                return f'https://{URL}/st?api={API}&url={link}'
-
-async def get_verify_shorted_link(num, link):
-    if int(num) == 1:
-        API = SHORTLINK_API
-        URL = SHORTLINK_URL
-    else:
-        API = VERIFY2_API
-        URL = VERIFY2_URL
-    https = link.split(":")[0]
-    if "http" == https:
-        https = "https"
-        link = link.replace("http", https)
-
-    if URL == "api.shareus.in":
-        url = f"https://{URL}/shortLink"
-        params = {"token": API,
-                  "format": "json",
-                  "link": link,
-                  }
-        try:
-            async with aiohttp.ClientSession() as session:
-                async with session.get(url, params=params, raise_for_status=True, ssl=False) as response:
-                    data = await response.json(content_type="text/html")
-                    if data["status"] == "success":
-                        return data["shortlink"]
-                    else:
-                        logger.error(f"Error: {data['message']}")
-                        return f'https://{URL}/shortLink?token={API}&format=json&link={link}'
-
-        except Exception as e:
-            logger.error(e)
-            return f'https://{URL}/shortLink?token={API}&format=json&link={link}'
-    else:
-        url = f'https://{URL}/api'
-        params = {'api': API,
-                  'url': link,
-                  }
-        try:
-            async with aiohttp.ClientSession() as session:
-                async with session.get(url, params=params, raise_for_status=True, ssl=False) as response:
-                    data = await response.json()
-                    if data["status"] == "success":
-                        return data["shortenedUrl"]
-                    else:
-                        logger.error(f"Error: {data['message']}")
-                        if URL == 'clicksfly.com':
-                            return f'https://{URL}/st?api={API}&url={link}'
-                        else:
-                            return f'https://{URL}/st?api={API}&url={link}'
-        except Exception as e:
-            logger.error(e)
-            if URL == 'clicksfly.com':
-                return f'https://{URL}/st?api={API}&url={link}'
-            else:
-                return f'https://{URL}/st?api={API}&url={link}'
+            return f'https://{URL}/api?api={API}&link={link}'
